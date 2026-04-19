@@ -53,19 +53,4 @@ class ViewSalle(ctk.CTk):
     self.service.ajouter_salle(salle)
     print("Salle ajoutée")
 
-    def modifier(self):
-    try:
-        cap = int(self.entry_cap.get())
-    except:
-        print("Capacité invalide")
-        return
-
-    salle = Salle(
-        self.entry_code.get(),
-        self.entry_desc.get(),
-        self.entry_cat.get(),
-        cap
-    )
-
-    self.service.modifier_salle(salle)
-    print("Salle modifiée")
+    
