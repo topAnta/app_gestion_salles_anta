@@ -97,6 +97,8 @@ self.treeList.heading("categorie", text="Catégorie")
 self.treeList.heading("capacite", text="Capacité")
 
 self.treeList.pack()
+self.lister_salles()
+
 
 def lister_salles(self):
     self.treeList.delete(*self.treeList.get_children())
@@ -110,4 +112,3 @@ def lister_salles(self):
             s.categorie,
             s.capacite
         ))
-self.lister_salles()
