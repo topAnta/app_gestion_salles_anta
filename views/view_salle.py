@@ -90,3 +90,10 @@ self.treeList = ttk.Treeview(
     self.cadreList,
     columns=("code", "description", "categorie", "capacite"),
     show="headings")
+
+self.treeList.heading("code", text="CODE")
+self.treeList.heading("description", text="Description")
+self.treeList.heading("categorie", text="Catégorie")
+self.treeList.heading("capacite", text="Capacité")
+
+self.treeList.pack()
