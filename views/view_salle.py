@@ -107,6 +107,7 @@ def lister_salles(self):
     self.treeList.delete(*self.treeList.get_children())
 
     liste = self.service.recuperer_salles()
+    self.lister_salles()
 
     for s in liste:
         self.treeList.insert("", "end", values=(
