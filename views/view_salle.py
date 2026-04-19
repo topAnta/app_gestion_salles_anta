@@ -85,3 +85,8 @@ ctk.CTkButton(self, text="Rechercher", command=self.rechercher).pack()
 from tkinter import ttk
 self.cadreList = ctk.CTkFrame(self)
 self.cadreList.pack(pady=10)
+
+self.treeList = ttk.Treeview(
+    self.cadreList,
+    columns=("code", "description", "categorie", "capacite"),
+    show="headings")
