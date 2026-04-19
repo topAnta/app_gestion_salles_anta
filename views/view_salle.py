@@ -51,6 +51,7 @@ class ViewSalle(ctk.CTk):
     )
 
     self.service.ajouter_salle(salle)
+    self.lister_salles()
     print("Salle ajoutée")
 
     def supprimer(self):
