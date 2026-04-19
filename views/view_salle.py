@@ -58,3 +58,21 @@ class ViewSalle(ctk.CTk):
 
     self.service.supprimer_salle(code)
     print("Salle supprimée")
+
+    def rechercher(self):
+    code = self.entry_code.get()
+
+    salle = self.service.rechercher_salle(code)
+
+    if salle:
+        self.entry_desc.delete(0, "end")
+        self.entry_cat.delete(0, "end")
+        self.entry_cap.delete(0, "end")
+
+        self.entry_desc.insert(0, salle.description)
+        self.entry_cat.insert(0, salle.categorie)
+        self.entry_cap.insert(0, salle.capacite)
+
+        print("Salle trouvée")
+    else:
+        print("Salle non trouvée")
