@@ -110,3 +110,4 @@ def lister_salles(self):
             s.categorie,
             s.capacite
         ))
+self.lister_salles()
