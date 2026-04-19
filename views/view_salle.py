@@ -65,6 +65,7 @@ class ViewSalle(ctk.CTk):
     code = self.entry_code.get()
 
     salle = self.service.rechercher_salle(code)
+    self.lister_salles()
 
     if salle:
         self.entry_desc.delete(0, "end")
