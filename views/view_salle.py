@@ -83,3 +83,5 @@ ctk.CTkButton(self, text="Supprimer", command=self.supprimer).pack()
 ctk.CTkButton(self, text="Rechercher", command=self.rechercher).pack()
 
 from tkinter import ttk
+self.cadreList = ctk.CTkFrame(self)
+self.cadreList.pack(pady=10)
