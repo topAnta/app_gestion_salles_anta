@@ -76,3 +76,8 @@ class ViewSalle(ctk.CTk):
         print("Salle trouvée")
     else:
         print("Salle non trouvée")
+
+ctk.CTkButton(self, text="Ajouter", command=self.ajouter).pack()
+ctk.CTkButton(self, text="Modifier", command=self.modifier).pack()
+ctk.CTkButton(self, text="Supprimer", command=self.supprimer).pack()
+ctk.CTkButton(self, text="Rechercher", command=self.rechercher).pack()
